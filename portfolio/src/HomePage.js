@@ -4,8 +4,10 @@ import { Parallax } from "react-parallax";
 import ReactCSSTransitionGroup from 'react-transition-group';
 import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
+import Image from 'react-bootstrap/Image'
 import Row from 'react-bootstrap/Row'
 import CardColumn from "./components/CardColumns"
+import Form from 'react-bootstrap/Form'
 
 
 const styles = {
@@ -23,10 +25,6 @@ const insideStyles = {
   transform: "translate(-50%,-50%)",
 };
 
-const bgImageStyle1 = {
-    backgroundRepeat: "repeat-y",
-    resizeMode: "repeat"
-}
 
 const insideStylesTitle = {
     background: "#262626",
@@ -40,22 +38,48 @@ const insideStylesTitle = {
 
 const image1 =
 "https://cdn.pixabay.com/photo/2015/02/06/21/26/bismuth-626546_1280.jpg";
-  
-const image3 =
-  "https://brightcove04pmdo-a.akamaihd.net/5104226627001/5104226627001_5297440765001_5280261645001-vs.jpg?pubId=5104226627001&videoId=5280261645001";
-const image4 =
-  "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/empire-state-building-black-and-white-square-format-john-farnan.jpg";
+
+const image2="./assets/itme.jpg"
+
 
 const HomePage = () => (
   <div style={styles}>
-    <Parallax bgImage={image1} strength={400} blur={{ min: -1, max: 4 }}>
+      <section id="home">
+    <Parallax id="home" bgImage={image1} strength={400} blur={{ min: -1, max: 4 }}>
       <div style={{ height: 600 }}>
         <div style={insideStyles}><h2>Kathleen Tonner</h2>
         Full-Stack Developer</div>
       </div>
     </Parallax>
+    </section>
     <h1>| | |</h1>
-    <Parallax id="work" bgImage={require("./assets/hip-square.png")} bgImageStyle={{bgImageStyle1}} blur={{ min: -1, max: 4 }}>
+    
+
+        {/* ABOUT SECTION */}
+        <div style={styles}>
+      <section id="about">
+    <Parallax id="about" strength={400} blur={{ min: 0, max: 6 }}>
+      <div style={{ height: 400 }}>
+      <Container>
+  <Row>
+    <Col xs={6} md={4}>
+      <Image src="./assets/itme.jpg" roundedCircle />
+    </Col>
+    <Col xs={6} md={4}>
+        <p className="about">Full Stack Web Developer using a background in content creation to create clean, comprehensive code. Earned a certificate in Full Stack Development from the University of Central Florida, with developed skills in JavaScript, CSS, and Node.js. Applied strong back-end development with MySQL and collaboration skills when working in a team on a recent project to create a book logging application for users to keep track of their favorite books. I am accustomed to working tight deadlines and adapting. Looking forward to contributing to a team’s success and making better digital products. 
+</p>
+        </Col>
+  </Row>
+</Container>
+      </div>
+    </Parallax>
+    </section>
+    </div>
+    <h1>| | |</h1>
+
+    {/* SELECTED PROJECTS */}
+    <section id="work">
+    <Parallax id="work" bgImage={require("./assets/hexellence_@2X.png")} bgImageStyle={{height:"700px", resizeMode:"repeat"}} blur={{ min: -1, max: 4 }}>
       <div style={{ height: 700 }}>
         <div style={insideStylesTitle} className="lead"><h3>Select Projects</h3></div>
         <Container fluid>
@@ -65,22 +89,20 @@ const HomePage = () => (
 </Container>
       </div>
     </Parallax>
+    </section>
     <h1>| | |</h1>
-    <Parallax bgImage={image3} strength={-100}>
-      <div style={{ height: 500 }}>
-        <div style={insideStyles}>Reverse direction</div>
-      </div>
-    </Parallax>
-    <h1>| | |</h1>
+
+    {/* CONTACT */}
+<section id="contact">
     <Parallax
-      bgImage={image4}
+      bgImage={require("./assets/rose-quartz.jpg")}
       strength={200}
       renderLayer={percentage => (
         <div>
           <div
             style={{
               position: "absolute",
-              background: `rgba(255, 125, 0, ${percentage * 1})`,
+              background: `rgba(0, 153, 77, ${percentage * 1})`,
               left: "50%",
               top: "50%",
               borderRadius: "50%",
@@ -93,10 +115,26 @@ const HomePage = () => (
       )}
     >
       <div style={{ height: 500 }}>
-        <div style={insideStyles}>renderProp</div>
+        <div style={insideStyles}><h3>Contact:</h3>
+        <Form>
+        <Form.Group controlId="formGroupName">
+    <Form.Label>Name</Form.Label>
+    <Form.Control type="email" placeholder="Name" />
+  </Form.Group>
+  <Form.Group controlId="formGroupEmail">
+    <Form.Label>Email address</Form.Label>
+    <Form.Control type="email" placeholder="Email" />
+  </Form.Group>
+  <Form.Group controlId="formGroupMessage">
+    <Form.Label>Message</Form.Label>
+    <Form.Control as="textarea" rows="3" placeholder="Message" />
+  </Form.Group>
+</Form>
+        </div>
       </div>
     </Parallax>
-    <div style={{ height: 500 }} />
+    </section>
+    <div style={{ height: 100 }} />
     <h2>{"\u2728"}</h2>
   </div>
 );
