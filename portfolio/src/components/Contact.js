@@ -1,6 +1,8 @@
 import React, {Component} from "react";
 import Form from 'react-bootstrap/Form';
 import { Parallax } from "react-parallax";
+import Button from 'react-bootstrap/Button';
+import axios from 'axios'
 
 const insideStyles = {
     background: "#262626",
@@ -13,6 +15,30 @@ const insideStyles = {
   };
 
 class Contact extends React.Component {
+
+    handleSubmit(e){
+        e.preventDefault();
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+        axios({
+            method: "POST", 
+            url:"http://localhost:3002/send", 
+            data: {
+                name: name,   
+                email: email,  
+                messsage: message
+            }
+        }).then((response)=>{
+            if (response.data.msg === 'success'){
+                alert("Message Sent."); 
+                this.resetForm()
+            }else if(response.data.msg === 'fail'){
+                alert("Message failed to send.")
+            }
+        })
+    }
+
     render (){
         return(
             <Parallax
@@ -40,16 +66,19 @@ class Contact extends React.Component {
               <Form style={{width:"400px"}}>
               <Form.Group controlId="formGroupName">
           <Form.Label>Name</Form.Label>
-          <Form.Control type="email" placeholder="Name" />
+          <Form.Control type="textarea" placeholder="Name" name="name" />
         </Form.Group>
         <Form.Group controlId="formGroupEmail">
-          <Form.Label>Email address</Form.Label>
-          <Form.Control type="email" placeholder="Email" />
+          <Form.Label>Email Address</Form.Label>
+          <Form.Control type="email" placeholder="Email" name="email" />
         </Form.Group>
         <Form.Group controlId="formGroupMessage">
           <Form.Label>Message</Form.Label>
-          <Form.Control as="textarea" rows="3" placeholder="Message" />
+          <Form.Control as="textarea" rows="3" placeholder="Message" name="message" />
         </Form.Group>
+        <Button variant="primary" type="submit">
+    Submit
+  </Button>
       </Form>
               </div>
             </div>
