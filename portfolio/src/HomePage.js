@@ -63,10 +63,10 @@ const HomePage = () => (
       <Container>
   <Row>
     <Col xs={6} md={4}>
-      <Image src="./assets/itme.jpg" roundedCircle />
+      <Image src={require("./assets/itme.jpg")} roundedCircle />
     </Col>
     <Col xs={6} md={4}>
-        <p className="about">Full Stack Web Developer using a background in content creation to create clean, comprehensive code. Earned a certificate in Full Stack Development from the University of Central Florida, with developed skills in JavaScript, CSS, and Node.js. Applied strong back-end development with MySQL and collaboration skills when working in a team on a recent project to create a book logging application for users to keep track of their favorite books. I am accustomed to working tight deadlines and adapting. Looking forward to contributing to a team’s success and making better digital products. 
+        <p className="aboutP">Full Stack Web Developer using a background in content creation to create clean, comprehensive code. Earned a certificate in Full Stack Development from the University of Central Florida, with developed skills in JavaScript, CSS, and Node.js. Applied strong back-end development with MySQL and collaboration skills when working in a team on a recent project to create a book logging application for users to keep track of their favorite books. I am accustomed to working tight deadlines and adapting. Looking forward to contributing to a team’s success and making better digital products. 
 </p>
         </Col>
   </Row>
@@ -79,8 +79,8 @@ const HomePage = () => (
 
     {/* SELECTED PROJECTS */}
     <section id="work">
-    <Parallax id="work" bgImage={require("./assets/hexellence_@2X.png")} bgImageStyle={{height:"700px", resizeMode:"repeat"}} blur={{ min: -1, max: 4 }}>
-      <div style={{ height: 700 }}>
+    <Parallax id="work"  bgImageStyle={{height:"900px", width:"auto", resizeMode:"repeat"}} blur={{ min: -1, max: 4 }}>
+      <div style={{ height: 900 }}>
         <div style={insideStylesTitle} className="lead"><h3>Select Projects</h3></div>
         <Container fluid>
   <Row>

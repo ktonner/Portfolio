@@ -1,12 +1,16 @@
 import React from "react";
 import Card from 'react-bootstrap/Card'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
 import CardColumns from 'react-bootstrap/CardColumns'
 
 const CardColumn = () => (
 
+<Container>
+  <Row>
 <CardColumns style={{position:"absolute",top:"20%"}}>
   <Card>
-    <Card.Img variant="top" src="../assets/weatherdash.png" alt="Weather Dashboard" />
+    <Card.Img variant="top" src={require("../assets/weatherdash.png")} alt="Weather Dashboard" />
     <Card.Body>
       <Card.Title>Weather Dashboard</Card.Title>
       <Card.Text>
@@ -20,11 +24,11 @@ const CardColumn = () => (
       </footer>
   </Card>
   <Card className="p-3">
-  <Card.Img variant="top" src="./assets/weatherdash.png" alt="Weather Dashboard" />
+  <Card.Img variant="top" src={require("../assets/booklogger.png")} alt="Book Logger" />
     <Card.Body>
       <Card.Title></Card.Title>
       <Card.Text>
-        Search for a city and check the weather for today, plus a five-day forecast. Uses third-party API.
+        Register as a user to track your favorite books.
       </Card.Text>
     </Card.Body>
     <footer>
@@ -98,6 +102,8 @@ const CardColumn = () => (
     </Card.Body>
   </Card>
 </CardColumns>
+</Row>
+</Container>
 )
 
 export default CardColumn;
