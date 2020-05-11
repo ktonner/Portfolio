@@ -35,6 +35,10 @@ const insideStylesTitle = {
     transform: "translate(-50%,-50%)",
   };
 
+const gradientStyle = { 
+  background: "linear-gradient(#00b33c, #330033);"
+}
+
 const image1 =
 "https://cdn.pixabay.com/photo/2015/02/06/21/26/bismuth-626546_1280.jpg";
 
@@ -79,7 +83,7 @@ const HomePage = () => (
 
     {/* SELECTED PROJECTS */}
     <section id="work">
-    <Parallax id="work"  bgImageStyle={{height:"900px", width:"auto", resizeMode:"repeat"}} blur={{ min: -1, max: 4 }}>
+    <Parallax id="work"  blur={{ min: -1, max: 4 }}>
       <div style={{ height: 900 }}>
         <div style={insideStylesTitle} className="lead"><h3>Select Projects</h3></div>
         <Container fluid>
