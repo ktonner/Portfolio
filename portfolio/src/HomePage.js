@@ -59,7 +59,7 @@ const HomePage = () => (
       <section id="about">
     <Parallax strength={400} blur={{ min: 0, max: 6 }}>
       <div style={{ height: 600 }}>
-      <Container style={{position:"relative",top:"10%", left:"6%"}} className="mx-auto">
+      <Container style={{position:"relative",top:"15%", left:"6%"}} className="mx-auto">
   <Row>
     <Col xs={6} md={4}>
       <Image src={require("./assets/itme.jpg")} roundedCircle />
@@ -116,7 +116,7 @@ const HomePage = () => (
     >
       <div style={{ height: 500 }}>
         <div style={insideStyles}><h3>Contact:</h3>
-        <Form>
+        <Form style={{width:"400px"}}>
         <Form.Group controlId="formGroupName">
     <Form.Label>Name</Form.Label>
     <Form.Control type="email" placeholder="Name" />
