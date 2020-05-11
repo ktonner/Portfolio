@@ -1,14 +1,10 @@
 import React from "react";
 import Card from 'react-bootstrap/Card'
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
 import CardColumns from 'react-bootstrap/CardColumns'
 
 const CardColumn = () => (
 
-<Container>
-  <Row>
-<CardColumns style={{position:"absolute",top:"20%"}}>
+<CardColumns style={{position:"absolute",top:"10%", width: "100%"}}>
   <Card>
     <Card.Img variant="top" src={require("../assets/weatherdash.png")} alt="Weather Dashboard" />
     <Card.Body>
@@ -19,7 +15,7 @@ const CardColumn = () => (
     </Card.Body>
     <footer>
         <small className="text-muted">
-          <a href="https://github.com/ktonner/Weather_Dash">Repo</a> | <a href="https://ktonner.github.io/Weather_Dash/">Deployed</a>
+          <a href="https://github.com/ktonner/Weather_Dash" target="_blank">Repo</a> | <a href="https://ktonner.github.io/Weather_Dash/" target="_blank">Deployed</a>
         </small>
       </footer>
   </Card>
@@ -33,7 +29,7 @@ const CardColumn = () => (
     </Card.Body>
     <footer>
         <small className="text-muted">
-          <a href="https://github.com/ktonner/Weather_Dash">Repo</a> | <a href="https://ktonner.github.io/Weather_Dash/">Deployed</a>
+          <a href="https://github.com/ktonner/full_stack_project" target="_blank">Repo</a> | <a href="http://booklogger123.herokuapp.com/" target="_blank">Deployed</a>
         </small>
       </footer>
   </Card>
@@ -102,8 +98,6 @@ const CardColumn = () => (
     </Card.Body>
   </Card>
 </CardColumns>
-</Row>
-</Container>
 )
 
 export default CardColumn;
