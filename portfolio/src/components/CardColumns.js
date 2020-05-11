@@ -22,7 +22,7 @@ const CardColumn = () => (
   <Card className="p-3">
   <Card.Img variant="top" src={require("../assets/booklogger.png")} alt="Book Logger" />
     <Card.Body>
-      <Card.Title></Card.Title>
+      <Card.Title>Book Logger</Card.Title>
       <Card.Text>
         Register as a user to track your favorite books.
       </Card.Text>
@@ -33,69 +33,47 @@ const CardColumn = () => (
         </small>
       </footer>
   </Card>
-  <Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
+  <Card className="text-center">
+  <Card.Img variant="top" src={require("../assets/budget.jpg")} />
     <Card.Body>
-      <Card.Title>Card title</Card.Title>
+      <Card.Title>Budget Tracker</Card.Title>
       <Card.Text>
-        This card has supporting text below as a natural lead-in to additional
-        content.{' '}
+        Keep track of your budget with a dynamic graph.
       </Card.Text>
     </Card.Body>
-  </Card>
-  <Card bg="primary" text="white" className="text-center p-3">
-    <blockquote className="blockquote mb-0 card-body">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
-        erat a ante.
-      </p>
-      <footer className="blockquote-footer">
+    <footer>
         <small className="text-muted">
-          Someone famous in <cite title="Source Title">Source Title</cite>
+          <a href="https://github.com/ktonner/PWA" target="_blank">Repo</a> | <a href="https://glacial-scrubland-56139.herokuapp.com/" target="_blank">Deployed</a>
         </small>
       </footer>
-    </blockquote>
+  </Card>
+  <Card>
+    <Card.Img variant="top" src={require("../assets/notetaker.png")} />
+    <Card.Body>
+      <Card.Title>Note Taker</Card.Title>
+      <Card.Text>
+       Write down new notes, edit old ones, or delete them.
+      </Card.Text>
+    </Card.Body>
+    <footer>
+        <small className="text-muted">
+          <a href="https://github.com/ktonner/Note-Taker" target="_blank">Repo</a> | <a href="https://ktonner.github.io/Note-Taker/" target="_blank">Deployed</a>
+        </small>
+      </footer>
   </Card>
   <Card className="text-center">
+  <Card.Img variant="top" src={require("../assets/codingquiz.png")} />
     <Card.Body>
-      <Card.Title>Card title</Card.Title>
+      <Card.Title>Coding Quiz</Card.Title>
       <Card.Text>
-        This card has supporting text below as a natural lead-in to additional
-        content.{' '}
-      </Card.Text>
-      <Card.Text>
-        <small className="text-muted">Last updated 3 mins ago</small>
+        Test your coding knowledge in a fun quiz game. Earn points the faster you answer correctly and log your high score.
       </Card.Text>
     </Card.Body>
-  </Card>
-  <Card>
-    <Card.Img src="holder.js/100px160" />
-  </Card>
-  <Card className="text-right">
-    <blockquote className="blockquote mb-0 card-body">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
-        erat a ante.
-      </p>
-      <footer className="blockquote-footer">
+    <footer>
         <small className="text-muted">
-          Someone famous in <cite title="Source Title">Source Title</cite>
+          <a href="https://github.com/ktonner/Coding_Quiz" target="_blank">Repo</a> | <a href="https://ktonner.github.io/Coding_Quiz/" target="_blank">Deployed</a>
         </small>
       </footer>
-    </blockquote>
-  </Card>
-  <Card>
-    <Card.Body>
-      <Card.Title>Card title</Card.Title>
-      <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This card has even longer content than the first to
-        show that equal height action.
-      </Card.Text>
-      <Card.Text>  
-        <small className="text-muted">Last updated 3 mins ago</small>
-      </Card.Text>
-    </Card.Body>
   </Card>
 </CardColumns>
 )
