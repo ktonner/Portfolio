@@ -7,8 +7,7 @@ import Col from 'react-bootstrap/Col'
 import Image from 'react-bootstrap/Image'
 import Row from 'react-bootstrap/Row'
 import CardColumn from "./components/CardColumns"
-
-import Contact from './components/Contact'
+import Contact from './components/ContactForm'
 
 
 const styles = {

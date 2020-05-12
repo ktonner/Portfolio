@@ -11,6 +11,7 @@ function App() {
     <div className="App">
       <Router history={history}>
         <Navbar />
+        <HomePage/>
         <Route path="/" exact component={HomePage} />
       </Router>
     </div>
