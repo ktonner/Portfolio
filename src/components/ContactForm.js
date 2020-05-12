@@ -69,7 +69,8 @@ class Contact extends React.Component {
             >
                 <div style={{ height: 500 }}>
                     <div style={insideStyles}><h3>Contact:</h3>
-                        <Form style={{ width: "400px" }}>
+                    <h4>kathleentonner@gmail.com</h4>
+                        {/* <Form style={{ width: "400px" }}>
                             <Form.Group controlId="formGroupName">
                                 <Form.Label>Name</Form.Label>
                                 <Form.Control type="textarea" placeholder="Name" id="name" />
@@ -85,7 +86,7 @@ class Contact extends React.Component {
                             <Button variant="primary" type="submit" onClick={this.handleSubmit}>
                                 Submit
                              </Button>
-                        </Form>
+                        </Form> */}
                     </div>
                 </div>
             </Parallax>
