@@ -43,6 +43,18 @@ export default class Navbar extends Component {
             <li className="nav-item">
               <Link
                 activeClass="active"
+                to="skills"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Skills
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                activeClass="active"
                 to="work"
                 spy={true}
                 smooth={true}

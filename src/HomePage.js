@@ -35,14 +35,10 @@ const insideStylesTitle = {
     transform: "translate(-50%,-50%)",
   };
 
-const gradientStyle = { 
-  background: "linear-gradient(#00b33c, #330033);"
-}
 
 const image1 =
 "https://cdn.pixabay.com/photo/2015/02/06/21/26/bismuth-626546_1280.jpg";
 
-const image2="./assets/itme.jpg"
 
 
 const HomePage = () => (
@@ -51,7 +47,8 @@ const HomePage = () => (
     <Parallax id="home" bgImage={image1} strength={400} blur={{ min: -1, max: 4 }}>
       <div style={{ height: 600 }}>
         <div style={insideStyles}><h2>Kathleen Tonner</h2>
-        Full-Stack Developer</div>
+        <h5>Full-Stack Developer</h5>
+        <p><a href="https://github.com/ktonner" target="_blank">Github</a></p></div>
       </div>
     </Parallax>
     </section>
@@ -80,6 +77,45 @@ const HomePage = () => (
     </section>
     </div>
     <h1>| | |</h1>
+
+
+{/* SKILLS */}
+
+    <section id="skills">
+    <Parallax id="skills" bgImage={require("../src/assets/landscape.jpg")} strength={400} blur={{ min: -1, max: 4 }}>
+      <div style={{ height: 600 }}>
+        <div style={insideStyles}><h2>Skills</h2>
+        <Container style={{position:"relative",top:"15%", left:"-10%"}}>
+        <Row>
+        <Col xs={6} md={4} className="mx-auto">
+        <h5>Languages</h5>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Javascript</li>
+          <li>Node.js</li>
+          <li>SQL</li>
+        </ul>
+        </Col>
+        <Col xs={6} md={4}className="mx-auto">
+          <h5>Applications</h5>
+        <ul>
+        <li>MySQL</li>
+        <li>MongoDB</li>
+        <li>Express</li>
+        <li>Handlebars</li>
+        <li>React</li>
+        <li>Mongoose</li>
+        </ul>
+        </Col>
+        </Row>
+        </Container>
+        </div>
+      </div>
+    </Parallax>
+    </section>
+    <h1>| | |</h1>
+    
 
     {/* SELECTED PROJECTS */}
     <section id="work">
