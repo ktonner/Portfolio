@@ -120,7 +120,7 @@ const HomePage = () => (
     {/* SELECTED PROJECTS */}
     <section id="work">
     <Parallax id="work"  blur={{ min: -1, max: 4 }}>
-      <div style={{ height: 900 }}>
+      <div style={{ height: 950 }}>
         <div style={insideStylesTitle} className="lead"><h3>Select Projects</h3></div>
         <Container fluid>
   <Row>
