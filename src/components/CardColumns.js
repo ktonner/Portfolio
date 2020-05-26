@@ -34,6 +34,20 @@ const CardColumn = () => (
       </footer>
   </Card>
   <Card className="text-center">
+  <Card.Img variant="top" src={require("../assets/soapbox.png")} />
+    <Card.Body>
+      <Card.Title>Soapbox</Card.Title>
+      <Card.Text>
+        Social media application that lets you create posts, follow others, or explore hashtags!
+      </Card.Text>
+    </Card.Body>
+    <footer>
+        <small className="text-muted">
+          <a href="https://github.com/ktonner/SocialMediaApp" target="_blank">Repo</a> | <a href="https://sleepy-brook-72953.herokuapp.com/public" target="_blank">Deployed</a>
+        </small>
+      </footer>
+  </Card>
+  <Card className="text-center">
   <Card.Img variant="top" src={require("../assets/budget.jpg")} />
     <Card.Body>
       <Card.Title>Budget Tracker</Card.Title>
