@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.f40b09fd.chunk.css",
-    "main.js": "/Portfolio/static/js/main.8f95906b.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.8f95906b.chunk.js.map",
+    "main.js": "/Portfolio/static/js/main.75c3c160.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.75c3c160.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.d26897fe.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.d26897fe.js.map",
-    "static/js/2.5ec599d4.chunk.js": "/Portfolio/static/js/2.5ec599d4.chunk.js",
-    "static/js/2.5ec599d4.chunk.js.map": "/Portfolio/static/js/2.5ec599d4.chunk.js.map",
+    "static/js/2.8ad41f2c.chunk.js": "/Portfolio/static/js/2.8ad41f2c.chunk.js",
+    "static/js/2.8ad41f2c.chunk.js.map": "/Portfolio/static/js/2.8ad41f2c.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "precache-manifest.ac1231ede2e1413b07bead65cc0aeeb0.js": "/Portfolio/precache-manifest.ac1231ede2e1413b07bead65cc0aeeb0.js",
+    "precache-manifest.da9063cbfaf1621dcab7d9cf3496d454.js": "/Portfolio/precache-manifest.da9063cbfaf1621dcab7d9cf3496d454.js",
     "service-worker.js": "/Portfolio/service-worker.js",
     "static/css/main.f40b09fd.chunk.css.map": "/Portfolio/static/css/main.f40b09fd.chunk.css.map",
-    "static/js/2.5ec599d4.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.5ec599d4.chunk.js.LICENSE.txt",
+    "static/js/2.8ad41f2c.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.8ad41f2c.chunk.js.LICENSE.txt",
     "static/media/booklogger.png": "/Portfolio/static/media/booklogger.f302f47c.png",
     "static/media/budget.jpg": "/Portfolio/static/media/budget.8173b035.jpg",
     "static/media/codingquiz.png": "/Portfolio/static/media/codingquiz.4868aa14.png",
@@ -19,12 +19,13 @@
     "static/media/landscape.jpg": "/Portfolio/static/media/landscape.6786b91a.jpg",
     "static/media/notetaker.png": "/Portfolio/static/media/notetaker.29e835d5.png",
     "static/media/rose-quartz.jpg": "/Portfolio/static/media/rose-quartz.a6310c39.jpg",
+    "static/media/soapbox.png": "/Portfolio/static/media/soapbox.37b560cf.png",
     "static/media/weatherdash.png": "/Portfolio/static/media/weatherdash.8c315cc5.png"
   },
   "entrypoints": [
     "static/js/runtime-main.d26897fe.js",
-    "static/js/2.5ec599d4.chunk.js",
+    "static/js/2.8ad41f2c.chunk.js",
     "static/css/main.f40b09fd.chunk.css",
-    "static/js/main.8f95906b.chunk.js"
+    "static/js/main.75c3c160.chunk.js"
   ]
 }
