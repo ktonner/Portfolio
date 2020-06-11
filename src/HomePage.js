@@ -49,6 +49,7 @@ const HomePage = () => (
       <Spring
       from={{opacity:0, marginTop: -100}}
       to={{opacity:1, marginTop: 0}}
+      config={{duration:500}}
       >
          {props => (
            <div style = {props}>
