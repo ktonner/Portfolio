@@ -1,7 +1,7 @@
 import React from "react";
 import { render } from "react-dom";
 import { Parallax } from "react-parallax";
-import ReactCSSTransitionGroup from 'react-transition-group';
+import { Spring } from 'react-spring/renderprops'
 import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Image from 'react-bootstrap/Image'
@@ -46,9 +46,18 @@ const HomePage = () => (
       <section id="home">
     <Parallax id="home" bgImage={image1} strength={400} blur={{ min: -1, max: 4 }}>
       <div style={{ height: 600 }}>
+      <Spring
+      from={{opacity:0, marginTop: -100}}
+      to={{opacity:1, marginTop: 0}}
+      >
+         {props => (
+           <div style = {props}>
         <div style={insideStyles}><h2>Kathleen Tonner</h2>
         <h5>Full-Stack Developer</h5>
         <p><a href="https://github.com/ktonner" target="_blank">Github</a></p></div>
+           </div>
+         )}
+      </Spring>
       </div>
     </Parallax>
     </section>
