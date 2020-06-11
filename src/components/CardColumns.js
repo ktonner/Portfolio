@@ -6,7 +6,9 @@ const CardColumn = () => (
 
 <CardColumns style={{position:"absolute",top:"10%", width: "100%"}}>
   <Card>
+  <a href="https://ktonner.github.io/Weather_Dash/" target="_blank" rel="noopener noreferrer">
     <Card.Img variant="top" src={require("../assets/weatherdash.png")} alt="Weather Dashboard" />
+    </a>
     <Card.Body>
       <Card.Title>Weather Dashboard</Card.Title>
       <Card.Text>
@@ -15,12 +17,14 @@ const CardColumn = () => (
     </Card.Body>
     <footer>
         <small className="text-muted">
-          <a href="https://github.com/ktonner/Weather_Dash" target="_blank">Repo</a> | <a href="https://ktonner.github.io/Weather_Dash/" target="_blank">Deployed</a>
+          <a href="https://github.com/ktonner/Weather_Dash" target="_blank" rel="noopener noreferrer">Repo</a> | <a href="https://ktonner.github.io/Weather_Dash/" target="_blank">Deployed</a>
         </small>
       </footer>
   </Card>
   <Card className="p-3">
+  <a href="http://booklogger123.herokuapp.com/" target="_blank" rel="noopener noreferrer">
   <Card.Img variant="top" src={require("../assets/booklogger.png")} alt="Book Logger" />
+  </a>
     <Card.Body>
       <Card.Title>Book Logger</Card.Title>
       <Card.Text>
@@ -34,7 +38,9 @@ const CardColumn = () => (
       </footer>
   </Card>
   <Card className="text-center">
+  <a href="https://sleepy-brook-72953.herokuapp.com/public" target="_blank">
   <Card.Img variant="top" src={require("../assets/soapbox.png")} />
+  </a>
     <Card.Body>
       <Card.Title>Soapbox</Card.Title>
       <Card.Text>
@@ -48,7 +54,9 @@ const CardColumn = () => (
       </footer>
   </Card>
   <Card className="text-center">
+  <a href="https://glacial-scrubland-56139.herokuapp.com/" target="_blank">
   <Card.Img variant="top" src={require("../assets/budget.jpg")} />
+  </a>
     <Card.Body>
       <Card.Title>Budget Tracker</Card.Title>
       <Card.Text>
@@ -62,7 +70,9 @@ const CardColumn = () => (
       </footer>
   </Card>
   <Card>
+  <a href="https://ktonner.github.io/Note-Taker/" target="_blank">
     <Card.Img variant="top" src={require("../assets/notetaker.png")} />
+    </a>
     <Card.Body>
       <Card.Title>Note Taker</Card.Title>
       <Card.Text>
@@ -76,7 +86,9 @@ const CardColumn = () => (
       </footer>
   </Card>
   <Card className="text-center">
+  <a href="https://ktonner.github.io/Coding_Quiz/" target="_blank">
   <Card.Img variant="top" src={require("../assets/codingquiz.png")} />
+  </a>
     <Card.Body>
       <Card.Title>Coding Quiz</Card.Title>
       <Card.Text>
