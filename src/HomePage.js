@@ -18,8 +18,10 @@ const styles = {
 
 const insideStyles = {
   background: "#262626",
-  width: "200px",
+  width: "400px",
+  color: "white",
   position: "absolute",
+  padding: "20px",
   top: "50%",
   left: "50%",
   transform: "translate(-50%,-50%)",
