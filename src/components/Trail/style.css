@@ -1,0 +1,23 @@
+.trails-text {
+    position: relative;
+    color: white;
+    width: 100%;
+    height: 40px;
+    line-height: 35px;
+    font-size: 20px;
+    font-weight: 800;
+    will-change: transform, opacity;
+    overflow: hidden;
+  }
+  
+  .box {
+      background-color: #282c34;
+      width:400px;
+      height:175px;
+      position: absolute;
+      top: 30%;
+      left: 40%;
+      transform: translate(-50%,-50%),
+  }
+
+  

@@ -1,21 +1,21 @@
 import React from "react";
 import { Spring } from 'react-spring/renderprops'
-import { useTrail, animated } from 'react-spring'
+import { useTrail, useTransition, animated } from 'react-spring'
+import './style.css'
 
 
 function Trail (props) {
 
 const items=(props.items)
+const config = { mass: 5, tension: 2000, friction: 200 }
 const trail = useTrail(items.length, {
     config,
-    opacity: toggle ? 1 : 0,
-    x: toggle ? 0 : 30,
-    height: toggle ? 80 : 0,
-    from: { opacity: 0, x: 30, height: 0 },
+    from: { opacity: 0, x: 0, height: 80, x: 0 },
+    to: {opacity: 1, x: 30, height: 0}
   })
 
   return (
-    <div className="trails-main">
+    <div className="box">
       <div>
         {trail.map(({ x, height, ...rest }, index) => (
           <animated.div
@@ -29,3 +29,5 @@ const trail = useTrail(items.length, {
     </div>
   )
 }
+
+export default Trail

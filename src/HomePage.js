@@ -8,17 +8,17 @@ import Image from 'react-bootstrap/Image'
 import Row from 'react-bootstrap/Row'
 import CardColumn from "./components/CardColumns"
 import Contact from './components/ContactForm'
-
+import Trail from './components/Trail/Trail'
 
 const styles = {
   fontFamily: "Inconsolata, Helvetica, Sans-Serif",
   textAlign: "center",
   backgroundColor: "#262626"
 };
+
 const insideStyles = {
   background: "#262626",
-  color: "white",
-  padding: 20,
+  width: "200px",
   position: "absolute",
   top: "50%",
   left: "50%",
@@ -46,19 +46,9 @@ const HomePage = () => (
       <section id="home">
     <Parallax id="home" bgImage={image1} strength={400} blur={{ min: -1, max: 4 }}>
       <div style={{ height: 600 }}>
-      <Spring
-      from={{opacity:0, marginTop: -100}}
-      to={{opacity:1, marginTop: 0}}
-      config={{duration:500}}
-      >
-         {props => (
-           <div style = {props}>
-        <div style={insideStyles}><h2>Kathleen Tonner</h2>
-        <h5>Full-Stack Developer</h5>
-        <p><a href="https://github.com/ktonner" target="_blank">Github</a></p></div>
-           </div>
-         )}
-      </Spring>
+      <Trail items={[<h2>Kathleen Tonner</h2>,
+        <h5>Full-Stack Developer</h5>,
+      <a href="https://github.com/ktonner" target="_blank">Github</a>]}/>
       </div>
     </Parallax>
     </section>
