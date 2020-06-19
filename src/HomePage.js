@@ -61,7 +61,7 @@ const HomePage = () => (
         <div style={styles}>
       <section id="about">
     <Parallax strength={400} blur={{ min: 0, max: 6 }}>
-      <div style={{ height: 600 }}>
+      <div style={{ height: 1000 }}>
       <Container style={{position:"relative",top:"15%", left:"6%"}} className="mx-auto">
   <Row>
     <Col xs={6} md={4}>
@@ -85,7 +85,7 @@ const HomePage = () => (
 
     <section id="skills">
     <Parallax id="skills" bgImage={require("../src/assets/landscape.jpg")} strength={400} blur={{ min: -1, max: 4 }}>
-      <div style={{ height: 600 }}>
+      <div style={{ height: 700 }}>
         <div style={insideStyles}><h2>Skills</h2>
         <Container style={{position:"relative",top:"15%", left:"-10%"}}>
         <Row>
