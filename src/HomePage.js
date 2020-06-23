@@ -7,6 +7,7 @@ import Col from 'react-bootstrap/Col'
 import Image from 'react-bootstrap/Image'
 import Row from 'react-bootstrap/Row'
 import CardColumn from "./components/CardColumns"
+import Projects from './components/Projects/Projects'
 import Contact from './components/ContactForm'
 import Trail from './components/Trail/Trail'
 
@@ -126,7 +127,7 @@ const HomePage = () => (
         <div style={insideStylesTitle} className="lead"><h3>Select Projects</h3></div>
         <Container fluid>
   <Row>
-  <CardColumn />
+  <Projects />
   </Row>
 </Container>
       </div>

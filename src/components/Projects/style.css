@@ -1,0 +1,23 @@
+.project-card{
+    height: 200px;
+    object-fit: cover;
+    width: 350px;
+    margin-bottom: 20px
+}
+
+.project-card:hover{
+    width: 400px;
+    height: 250px;
+    transition: width 1s, height 1s;
+    transition-timing-function: ease-in;
+}
+
+.project-card:hover:after{
+    height: 200px;
+    width: 350px;
+ 
+}
+
+.project-title{
+    color: white;
+}
