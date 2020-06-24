@@ -1,21 +1,50 @@
 .project-card{
     height: 200px;
+    z-index: 0;
     object-fit: cover;
     width: 350px;
-    margin-bottom: 20px;
     transition: all .3s;
     transition-timing-function: ease-in;
+    margin-bottom: 10px;
 }
 
 .project-card:hover{
-    width: 400px;
     height: 250px;
     transition: all .3s;
     transition-timing-function: ease-out;
+    z-index: 0
 
 }
+
+/* .project .project-card-gif{
+    height: 250px;
+    object-fit: cover;
+    width: 350px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.project:hover .project-card-gif{
+    display: block;
+}
+
+.project:hover .project-card{
+    display:none;
+} */
 
 
 .project-title{
     color: white;
+}
+
+Button.learn {
+    position: relative;
+    bottom: 100px;
+    z-index: 3;
+    opacity:0
+}
+
+.project-card:hover Button.learn {
+    opacity: 1;
+    z-index: 3;
 }

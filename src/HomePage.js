@@ -127,7 +127,7 @@ const HomePage = () => (
         <div style={insideStylesTitle} className="lead"><h3>Select Projects</h3></div>
         <Container fluid>
   <Row>
-  <Projects />
+  <CardColumn />
   </Row>
 </Container>
       </div>
