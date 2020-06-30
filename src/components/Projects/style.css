@@ -8,7 +8,7 @@
     margin-bottom: 10px;
 }
 
-.project-card:hover{
+.project-card:hover {
     height: 250px;
     transition: all .3s;
     transition-timing-function: ease-out;
@@ -39,12 +39,15 @@
 
 Button.learn {
     position: relative;
-    bottom: 100px;
+
     z-index: 3;
-    opacity:0
+    opacity:1
 }
 
 .project-card:hover Button.learn {
     opacity: 1;
     z-index: 3;
+    height: 250px;
+    transition: all .3s;
+    transition-timing-function: ease-out;
 }

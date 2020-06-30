@@ -23,9 +23,9 @@ const Projects = () => (
 
     <Col>
         <div class='project'>
+        
         <h3 class='project-title'>Soapbox</h3>
-        <img class='project-card' src={require("../../assets/soapbox.png")} alt="Soapbox" />
-        <Button className='learn'>Yo</Button>
+        <img class='project-card' src={require("../../assets/soapbox.png")} alt="Soapbox" onClick='' />
         </div>
 
         <div class='project'>
