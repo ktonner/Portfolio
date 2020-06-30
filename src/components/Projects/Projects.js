@@ -2,8 +2,10 @@ import React from "react";
 import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
+import ModalBtn from '../ModalBtn/index'
 import './style.css'
 import Button from 'react-bootstrap/Button'
+
 
 const Projects = () => (
     <div>
@@ -26,6 +28,7 @@ const Projects = () => (
         
         <h3 class='project-title'>Soapbox</h3>
         <img class='project-card' src={require("../../assets/soapbox.png")} alt="Soapbox" onClick='' />
+        <ModalBtn/>
         </div>
 
         <div class='project'>

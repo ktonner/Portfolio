@@ -9,11 +9,10 @@
 }
 
 .project-card:hover {
-    height: 250px;
     transition: all .3s;
     transition-timing-function: ease-out;
-    z-index: 0
-
+    z-index: 0;
+    opacity: .3;
 }
 
 /* .project .project-card-gif{
@@ -37,17 +36,16 @@
     color: white;
 }
 
-Button.learn {
+.learn {
     position: relative;
-
+    bottom: 100px;
     z-index: 3;
-    opacity:1
+
+
 }
 
-.project-card:hover Button.learn {
-    opacity: 1;
+.project-card:hover + .learn{
     z-index: 3;
-    height: 250px;
-    transition: all .3s;
-    transition-timing-function: ease-out;
+    color: red;
+    display: inline-block;
 }
