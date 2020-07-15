@@ -63,3 +63,21 @@
 .learn:hover {
     opacity: .5;
   }
+
+
+
+figure:hover figure-caption{
+    opacity:1
+}
+
+figure-caption{
+    transition: .45s ease-in-out;
+    opacity:0;
+    color:white;
+    position: relative;
+    bottom:45%;
+    z-index:2;
+    background-color: purple;
+    width: 100%;
+
+}

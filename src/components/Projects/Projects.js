@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/Row'
 import ModalBtn from '../ModalBtn/index'
 import './style.css'
 import Button from 'react-bootstrap/Button'
+import Figure from 'react-bootstrap/Figure'
 
 
 const Projects = () => (
@@ -24,12 +25,14 @@ const Projects = () => (
     </Col>
 
     <Col>
-        <div class='project'>
+      
         
         <h3 class='project-title'>Soapbox</h3>
+        <Figure>
         <img class='project-card' src={require("../../assets/soapbox.png")} alt="Soapbox" onClick='' />
-        <ModalBtn/>
-        </div>
+        <figure-caption>Test</figure-caption>
+        </Figure>
+
 
         <div class='project'>
         <h3 class='project-title'>Budget Tracker</h3>
