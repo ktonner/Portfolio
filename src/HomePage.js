@@ -141,6 +141,8 @@ const HomePage = () => (
     </section>
     <div style={{ height: 100 }} />
     <h2>{"\u2728"}</h2>
+    <p class='attr'>Icon made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
+  <br></br>
   </div>
 );
 
