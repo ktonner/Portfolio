@@ -1,0 +1,33 @@
+Container{
+    width:100%
+}
+
+.skills {
+    background-color: black;
+}
+
+Figure{
+    font-size: 18px;
+    width: 275px;
+    border-radius: 10px;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.budget{
+    object-fit: cover;
+    width: 300px;
+
+}
+
+a{
+    margin:5px;
+}
+
+
+p{
+    font-size:14px;
+}
+
+h3{
+    font-size:20px;
+}

@@ -1,0 +1,84 @@
+.circle{
+    background:#ffc7e3;
+    width:275px;
+    height:275px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px  black;
+    z-index:0;
+    position: relative;
+    left:130px;
+    bottom: 260px;
+}
+
+.line{
+    /* background: linear-gradient(to right, #fff0f7, #ffc7e3); */
+    background: #fff0f7;
+    width:200px;
+    height:15px;
+    border-radius: 5%;
+    position: relative;
+    bottom: 480px;
+    left: 70px;
+    opacity: .7;
+    z-index: 0;
+}
+
+.second{
+    position: relative;
+    bottom: 460px;
+    width: 280px;
+    left: -10px;
+
+}
+
+.third{
+    position: relative;
+    bottom: 430px;
+}
+
+.triangle {
+    width: 0; 
+    height: 0; 
+    border-left: 300px solid transparent;
+    border-right: 300px solid transparent;
+    border-top: 300px solid #5BFFF3;
+    position: relative;
+    right: 30px;
+    top: 80px;
+    z-index:0;
+    /* box-shadow: 10px 8px 5px  black; */
+  }
+
+
+
+  .trapezoid {
+	border-bottom: 90px solid #ffc4e9;
+	border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+	height: 0;
+    width: 800px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 77%;
+    left:-20%;
+    z-index: 0;
+}
+
+.decorations{
+    width:700px;
+}
+
+/* TABLET/CELLPHONE SCEEN SIZES */
+@media only screen and (max-width: 1194px) {
+.circle { position: relative; top: 50px; left:90px}
+.line {display: none}
+.triangle {display:none}
+}
+
+@media only screen and (max-width: 768px){
+    .circle {position: relative; left:-20px; top:60px}
+}
+
+@media only screen and (max-width: 990px){
+    .circle {position: relative; left:25px; top:75px}
+}
