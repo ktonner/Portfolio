@@ -2,6 +2,7 @@ import React from "react";
 import { Router, Route, Link } from "react-router-dom";
 import { createBrowserHistory as createHistory } from "history";
 import HomePage from "./HomePage";
+import Work from "./Work"
 import "./App.css";
 import Navbar from "./components/Navbar";
 
