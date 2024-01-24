@@ -70,7 +70,7 @@ const HomePage = () => (
     </Col>
     <Col xs={6} md={4}>
      
-        <p className="aboutP"><b>Full Stack Web Developer</b> using a background in content creation to create clean, comprehensive code. Earned a certificate in Full Stack Development from the University of Central Florida, with developed skills in JavaScript, CSS, and Node.js. Applied strong back-end development with MySQL and collaboration skills when working in a team on a recent project to create a book logging application for users to keep track of their favorite books. I am accustomed to working tight deadlines and adapting. Looking forward to contributing to a team’s success and making better digital products. 
+        <p className="aboutP"><b>Full Stack Web Developer</b> with 3 years of professional experience. Known for creating clean, comprehensive code. Earned a certificate in Full Stack Development from the University of Central Florida, with developed skills in JavaScript, CSS, and Node.js. 
 </p>
         </Col>
   </Row>
@@ -96,17 +96,24 @@ const HomePage = () => (
           <li>HTML</li>
           <li>CSS</li>
           <li>Javascript</li>
+          <li>Typescript</li>
           <li>Node.js</li>
           <li>SQL</li>
+          <li>C#</li>
+          <li>Java</li>
+          <li>Python</li>
         </ul>
         </Col>
         <Col xs={6} md={4}className="mx-auto">
           <h5>Applications</h5>
         <ul>
-        <li>MySQL</li>
+        <li>AWS</li>
+        <li>Docker</li>
+        <li>SQL</li>
         <li>MongoDB</li>
         <li>Express</li>
-        <li>Handlebars</li>
+        <li>Vue</li>
+        <li>Angular</li>
         <li>React</li>
         <li>Mongoose</li>
         </ul>
@@ -141,7 +148,7 @@ const HomePage = () => (
     </section>
     <div style={{ height: 100 }} />
     <h2>{"\u2728"}</h2>
-    <p class='attr'>Icon made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
+    <p className='attr'>Icon made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
   <br></br>
   </div>
 );
